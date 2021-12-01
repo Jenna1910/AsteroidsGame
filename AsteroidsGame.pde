@@ -17,10 +17,13 @@ public void draw()
   }
 
   if (keyPressed) {
-    if (key == 'a' || key == 'A') {
+    if (key == 'r' || key == 'R') {
       ship.turn(-10);
-    }
-    if (key == ' ') { 
+    } 
+    if (key == 'l' || key == 'L') {
+      ship.turn(10);
+    } 
+    if (key == ' ') {
       ship.accelerate(0.4);
     }
     if (key == 'h' || key == 'H') {
